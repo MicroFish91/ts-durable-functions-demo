@@ -6,10 +6,29 @@
         "isEnabled": true,
         "excludedTypes": "Request"
       }
+    },
+    "logLevel": {
+      "Host.Triggers.DurableTask": "Warning",
+      "Function": "Warning",
+      "DurableTask.Netherite": "Information",
+      "DurableTask.Netherite.FasterStorage": "Warning",
+      "DurableTask.Netherite.EventHubsTransport": "Warning",
+      "DurableTask.Netherite.Events": "Warning",
+      "DurableTask.Netherite.WorkItems": "Warning",
+      "DurableTask.Netherite.Client": "Warning",
+      "DurableTask.Netherite.LoadMonitor": "Warning"
     }
   },
-  "extensionBundle": {
-    "id": "Microsoft.Azure.Functions.ExtensionBundle",
-    "version": "[3.*, 4.0.0)"
+  "extensions": {
+    "durableTask": {
+      "hubName": "HelloNetherite",
+      "useGracefulShutdown": true,
+      "storageProvider": {
+        "type": "Netherite",
+        "StorageConnectionName": "AzureWebJobsStorage",
+        "EventHubsConnectionName": "EventHubsConnection",
+        "CacheOrchestrationCursors": "false"
+      }
+    }
   }
 }
