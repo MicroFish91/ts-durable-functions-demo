@@ -1,5 +1,7 @@
 ## Steps
 
+- az account set --subscription <subscriptionIdHere>
+
 - `npm i`
 - Run setup.bash
 - Start Azurite
