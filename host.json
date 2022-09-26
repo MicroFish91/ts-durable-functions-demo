@@ -6,6 +6,21 @@
         "isEnabled": true,
         "excludedTypes": "Request"
       }
+    },
+    "logLevel": {
+      "DurableTask.SqlServer": "Information",
+      "DurableTask.Core": "Warning"
+    }
+  },
+  "extensions": {
+    "durableTask": {
+      "storageProvider": {
+        "type": "mssql",
+        "connectionStringName": "SQLDB_Connection",
+        "taskEventLockTimeout": "00:02:00",
+        "createDatabaseIfNotExists": true,
+        "schemaName": null
+      }
     }
   },
   "extensionBundle": {

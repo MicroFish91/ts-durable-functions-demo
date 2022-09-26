@@ -1,0 +1,5 @@
+###
+POST http://localhost:7071/api/orchestrators/DurableFunctionsOrchestratorTS
+
+###
+POST https://abcdageageageageagea.azurewebsites.net/api/orchestrators/DurableFunctionsOrchestratorTS

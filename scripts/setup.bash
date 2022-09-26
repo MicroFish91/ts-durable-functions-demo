@@ -1,0 +1,1 @@
+func extensions install -p Microsoft.DurableTask.SqlServer.AzureFunctions -v 1.0.1
