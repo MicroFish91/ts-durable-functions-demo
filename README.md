@@ -7,3 +7,6 @@
 - Start Azurite
 - `npm run start`
 - Check storage emulator using storage explorer
+
+
+- https://microsoft.github.io/durabletask-netherite/#/settings

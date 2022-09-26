@@ -19,6 +19,10 @@
       "DurableTask.Netherite.LoadMonitor": "Warning"
     }
   },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[3.*, 4.0.0)"
+  },
   "extensions": {
     "durableTask": {
       "hubName": "HelloNetherite",
